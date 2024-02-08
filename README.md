@@ -4,23 +4,15 @@ To install driver automatically run in console:
 
 curl -sSf https://raw.githubusercontent.com/MarcO-79/tbs-install/main/drv-tbs.sh | sh
 
+# Check Driver
+To check if the driver has been installed correctly, list adapters in the dvb directory:
 
-# lamp-server
-This is LAMP Server (PHP 7.4.3 + Apache 2.4 + MySQL 8.0.19 + phpMyAdmin 5.0.1)
+ls /dev/dvb
 
+Should be listed all adapters installed in the system. For example:
 
-# Install
-git clone https://github.com/MarcO-79/lamp-server.git
+adapter0 adapter1 adapter2 adapter3 ...
 
-cd lamp-server
-
-# Start
-docker-compose up -d
-
-# Stop
-docker-compose down
-
-# Runing Server
-ip_address:8080 -> Web pages
-
-ip_address:8090 -> phpMyAdmin pages
+# Troubleshooting
+You can contact TBS representatives for help installing drivers at this link: https://www.tbsdtv.com/contact-us.html - select "Software installation and debugging"
+If you have any issues with your DVB Adapters, please check DVB Troubleshooting
